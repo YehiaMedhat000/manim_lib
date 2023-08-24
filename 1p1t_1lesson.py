@@ -530,3 +530,22 @@ class NumsBetween_rdSol(MovingCameraScene): # Failed to get the needed animation
         self.wait()
         self.play(FadeOut(l1,l2,rec_1_1),rec_2.animate.become(SurroundingRectangle(num_l_2.labels[1:8],color=RED).set_fill(GREY).set_opacity(0.5)))
         self.wait(3)
+
+class SR_Numline(Scene):
+    def construct(self):
+        
+        # Initialize Mobjects
+        num_l_0 = NumberLine(x_range=[-10,10],include_numbers=True,include_ticks=True,length=13,color=BLUE)
+        arr = Arrow(start=num_l_0.n2p(0)+(UP*0.5),end=num_l_0.n2p(3)+(UP*0.5),color=YELLOW)
+        num = always_redraw(lambda: DecimalNumber(number=(arr.end[0]-arr.start[0]),
+                                                    num_decimal_places=0,include_sign=True).next_to(arr,UP))
+
+
+        # Playing animations
+        self.play(Write(num_l_0,rate_func=rate_functions.ease_in_expo),
+                  Create(arr),Write(num))
+        self.wait()
+        self.play(arr.animate.set(start=num_l_0.n2p(0)+(UP*0.5),end=num_l_0.n2p(-6)+(UP*0.5)))
+        self.wait(3)
+        
+        
