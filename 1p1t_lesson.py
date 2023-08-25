@@ -557,26 +557,34 @@ class SR_Numline(Scene):
         
         # Playing animations
         self.play(Write(num_l_0))
+        
         self.wait(2)
         self.play(Create(arr_0),Write(num_0))
+        
         self.wait(2)
         self.play(Write(f_0),Write(num_1))
+        
         self.wait(2)
         self.play(p_end.animate.set_value(-6),
                   num.animate.set_value(-6),
                   multiplier.animate.set_value(1))
+        
         self.wait(2)
-        self.play(multiplier.animate.set_value(-1))
+        self.play(multiplier.animate.set_value(-1),run_time=0.25)
+        self.play(Indicate(num_1,scale_factor=1.5,color=RED))
+        
         self.wait(2)
         self.play(p_end.animate.set_value(6),
                   num.animate.set_value(6),
                   multiplier.animate.set_value(1))
+        
         self.wait(2)
         self.play(multiplier.animate.set_value(2),
-                  FadeOut(f_0))
+                  ReplacementTransform(f_0,MathTex('\\div').match_updaters(f_0)))
+        self.play(Indicate(num_1,scale_factor=1.5,color=RED))
+        
         self.wait(2)
         self.play(p_end.animate.set_value(3),
                   num.animate.set_value(3),
-                  multiplier.animate.set_value(1),
-                  FadeOut())
+                  multiplier.animate.set_value(1))
         self.wait(3)
