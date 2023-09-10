@@ -4,9 +4,7 @@
 
 ## Important note
 
-> **On each header you'll find a video link**
-
-## [S_int_l scene](/challenges/S_int_l.mp4)
+## S_int_l scene
 
 > Explains the integers numberline, the challenges in this scenes are:
 
@@ -14,7 +12,7 @@
 
 2. I couldn't make the last `<` sign disappear, **actually I can do it now.**
 
-## [S_rat_l scene](/challenges/S_rat_l.mp4)
+## S_rat_l scene
 
 > Explains the rationals numberline, the challenges in this scene are:
 
@@ -24,7 +22,7 @@
 
 3. I wanted the numbers to show up as fractions not decimals, **This is applicable by the `label_constructor` param,** but, I saw some people trying with it hard without the needed results
 
-## [SR_Numline scene](/challenges/SR_Numline.mp4)
+## SR_Numline scene
 
 > Explains the Sign rule of with arrows on the numberline using some arrow.
 
@@ -34,7 +32,7 @@
 
 3. What I tried is to try to `self.remove()`, `self.play(FadeOut())`, but not giving the described wanted result above.
 
-## [CubeVolume scene](/challenges/CubeVolume.mp4)
+## CubeVolume scene
 
 > Explains the conversion from length to area to volume, or from 1D to 2D to 3D shapes
 
@@ -42,7 +40,7 @@
 
 2. I would like a more straight forward way to show the brace with the label more precisely in 3D.
 
-## [SpheresCuboid scene](/challenges/SpheresCuboid.mp4)
+## SpheresCuboid scene
 
 ### Uncomplete scene
 
