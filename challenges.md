@@ -42,8 +42,6 @@
 
 ## SpheresCuboid scene
 
-### Uncomplete scene
-
 > Explains a specific problem in a textbook about the ration between 3 spheres and the box that contains them.
 
 1. I wanted to get the braces to completely be replaced with the bigger one, but, as it seems in the video that one of the braces wasn't replaced.
